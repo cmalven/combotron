@@ -1,50 +1,43 @@
-var adjective_array = new Array(0);
-var form_array = new Array(0);
-var object_array = new Array(0);
+var adjectiveArray = new Array(0);
+var formArray = new Array(0);
+var objectArray = new Array(0);
 
-$(function(){
-	
-	load_xml();
+$(function() {
+  loadXml();
 });
 
-function load_xml()
-{
-	$.ajax({
-	    type: "GET",
-	    url: "words.opml",
-	    dataType: "xml",
-	    success: parseXml
-	});
+function loadXml() {
+  $.ajax({
+    type: "GET",
+    url: "words.opml",
+    dataType: "xml",
+    success: parseXml
+  });
 }
 
-function parseXml(xml)
-{
-	$(xml).find('body').find('outline').each(function()
-	{
-		var xml_text = $(this).attr('text');
+function parseXml(xml) {
+  $(xml).find('body').find('outline').each(function() {
+    var xmlText = $(this).attr('text');
 
-		// Sort by type according to container parent
-		if ($(this).closest('outline[text="Adjectives"]').length)
-		{
-			adjective_array.push(xml_text);
-		} else if ($(this).closest('outline[text="Forms"]').length) {
-			form_array.push(xml_text);
-		} else if ($(this).closest('outline[text="Objects"]').length) {
-			object_array.push(xml_text);
-		}
-	});
-	
-	show_random_combo();
+    // Sort by type according to container parent
+    if ($(this).closest('outline[text="Adjectives"]').length) {
+      adjectiveArray.push(xmlText);
+    } else if ($(this).closest('outline[text="Forms"]').length) {
+      formArray.push(xmlText);
+    } else if ($(this).closest('outline[text="Objects"]').length) {
+      objectArray.push(xmlText);
+    }
+  });
+  
+  showRandomCombo();
 }
 
-function show_random_combo()
-{
-	var arrays_to_parse = [adjective_array, form_array, object_array];
-	
-	for (var i=0; i<arrays_to_parse.length; i++)
-	{
-		var rand_num = Math.floor(Math.random() * arrays_to_parse[i].length);
-		
-		$('h1 span').eq(i).html(arrays_to_parse[i][rand_num]);
-	}
+function showRandomCombo() {
+  var arraysToParse = [adjectiveArray, formArray, objectArray];
+  
+  for (var i=0; i<arraysToParse.length; i++) {
+    var randomNumber = Math.floor(Math.random() * arraysToParse[i].length);
+    
+    $('h1 span').eq(i).html(arraysToParse[i][randomNumber]);
+  }
 }
