@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title></title>
+<expansionState>0,1,11,23,37,50</expansionState>
+</head>
+<body>
+	<outline text="Adjectives">
+		<outline text="Energy">
+			<outline text="Intensity"/>
+			<outline text="Happiness"/>
+			<outline text="Enthusiasm"/>
+			<outline text="Power"/>
+			<outline text="Impact"/>
+			<outline text="Creativity"/>
+			<outline text="Excitement"/>
+			<outline text="Invigorate"/>
+			<outline text="Life"/>
+		</outline>
+		<outline text="Assurance">
+			<outline text="Trust"/>
+			<outline text="Security"/>
+			<outline text="Confidence"/>
+			<outline text="Promise"/>
+			<outline text="Protection"/>
+			<outline text="Safety"/>
+			<outline text="Defense"/>
+			<outline text="Pledge"/>
+			<outline text="Vow"/>
+			<outline text="Commitment"/>
+			<outline text="Guarantee"/>
+		</outline>
+		<outline text="Purity">
+			<outline text="Clean"/>
+			<outline text="Clear"/>
+			<outline text="Flawless"/>
+			<outline text="Genuine"/>
+			<outline text="Real"/>
+			<outline text="Complete"/>
+			<outline text="Absolute"/>
+			<outline text="Pristine"/>
+			<outline text="Fresh"/>
+			<outline text="Crisp"/>
+			<outline text="Refreshing"/>
+			<outline text="Authentic"/>
+			<outline text="Honest"/>
+		</outline>
+	</outline>
+	<outline text="Forms">
+		<outline text="Translucent"/>
+		<outline text="Floating"/>
+		<outline text="Mirror"/>
+		<outline text="Perspective"/>
+		<outline text="Negative Space"/>
+		<outline text="Highlights"/>
+		<outline text="Flowing"/>
+		<outline text="Contained"/>
+		<outline text="Wrapped In"/>
+		<outline text="Lighted Up"/>
+		<outline text="Rock-Solid"/>
+		<outline text="Sharp Edges"/>
+	</outline>
+	<outline text="Objects">
+		<outline text="Lock"/>
+		<outline text="Shield"/>
+		<outline text="Crest"/>
+		<outline text="Stone"/>
+		<outline text="Metal"/>
+		<outline text="Droplet"/>
+		<outline text="Water"/>
+		<outline text="Natural (Plant-like)"/>
+		<outline text="Abstract Leaves"/>
+		<outline text="Abstract Plant"/>
+		<outline text="Rain"/>
+		<outline text="Light"/>
+		<outline text="Ribbon"/>
+		<outline text="Seal"/>
+		<outline text="Traditional"/>
+		<outline text="Crest"/>
+		<outline text="Emblem"/>
+		<outline text="Letter &apos;A&apos;"/>
+		<outline text="Hand"/>
+	</outline>
+</body>
+</opml>
