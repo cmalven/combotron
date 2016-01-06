@@ -27,11 +27,11 @@ function parseXml(xml) {
     var xmlText = $(this).attr('text');
 
     // Sort by type according to container parent
-    if ($(this).closest('outline[text="Adjectives"]').length) {
+    if ($(this).parent('outline[text="Adjectives"]').length) {
       adjectiveArray.push(xmlText);
-    } else if ($(this).closest('outline[text="Forms"]').length) {
+    } else if ($(this).parent('outline[text="Forms"]').length) {
       formArray.push(xmlText);
-    } else if ($(this).closest('outline[text="Objects"]').length) {
+    } else if ($(this).parent('outline[text="Objects"]').length) {
       objectArray.push(xmlText);
     }
   });
