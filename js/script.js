@@ -4,7 +4,14 @@ var objectArray = new Array(0);
 
 $(function() {
   loadXml();
+
+  // Refresh when the body is clicked
+  $('body').click(refresh);
 });
+
+function refresh() {
+  window.location.reload();
+}
 
 function loadXml() {
   $.ajax({
